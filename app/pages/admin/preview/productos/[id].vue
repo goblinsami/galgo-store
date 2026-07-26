@@ -56,7 +56,10 @@ definePageMeta({
 })
 
 const route = useRoute()
-const { data: product } = await useFetch<Product>(`/api/admin/products/${route.params.id}`)
+const { $adminFetch } = useNuxtApp()
+const { data: product } = await useFetch<Product>(`/api/admin/products/${route.params.id}`, {
+  $fetch: $adminFetch,
+})
 
 useSeoMeta({
   title: () => product.value ? `Preview: ${product.value.name}` : 'Preview producto',

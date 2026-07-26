@@ -75,7 +75,11 @@ definePageMeta({
   layout: 'admin',
 })
 
-const { data: products, refresh } = await useFetch<Product[]>('/api/admin/products', { default: () => [] })
+const { $adminFetch } = useNuxtApp()
+const { data: products, refresh } = await useFetch<Product[]>('/api/admin/products', {
+  default: () => [],
+  $fetch: $adminFetch,
+})
 const textFilter = ref('')
 const categoryFilter = ref<ProductCategory | 'all'>('all')
 const statusFilter = ref<AdminStatusFilter>('all')
@@ -92,7 +96,7 @@ function formatDate(value: string) {
 }
 
 async function toggleProduct(product: Product) {
-  await $fetch(`/api/admin/products/${product.id}`, {
+  await $adminFetch(`/api/admin/products/${product.id}`, {
     method: 'PUT',
     body: {
       ...productToAdminPayload(product),
@@ -107,7 +111,7 @@ async function deleteProduct() {
     return
   }
 
-  await $fetch(`/api/admin/products/${productToDelete.value.id}`, { method: 'DELETE' })
+  await $adminFetch(`/api/admin/products/${productToDelete.value.id}`, { method: 'DELETE' })
   productToDelete.value = null
   await refresh()
 }

@@ -25,8 +25,14 @@ definePageMeta({
 })
 
 const route = useRoute()
+const { $adminFetch } = useNuxtApp()
 const [{ data: article }, { data: products }] = await Promise.all([
-  useFetch<AdminArticle>(`/api/admin/articles/${route.params.id}`),
-  useFetch<Product[]>('/api/admin/products', { default: () => [] }),
+  useFetch<AdminArticle>(`/api/admin/articles/${route.params.id}`, {
+    $fetch: $adminFetch,
+  }),
+  useFetch<Product[]>('/api/admin/products', {
+    default: () => [],
+    $fetch: $adminFetch,
+  }),
 ])
 </script>

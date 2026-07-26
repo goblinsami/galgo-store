@@ -47,5 +47,8 @@ definePageMeta({
   layout: 'admin',
 })
 
-const { data: dashboard } = await useFetch<AdminDashboard>('/api/admin/dashboard')
+const { $adminFetch } = useNuxtApp()
+const { data: dashboard } = await useFetch<AdminDashboard>('/api/admin/dashboard', {
+  $fetch: $adminFetch,
+})
 </script>

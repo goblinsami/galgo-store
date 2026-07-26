@@ -12,7 +12,10 @@
 
 <script setup lang="ts">
 const client = useSupabaseClient()
-const { data: session } = await useFetch<{ email: string }>('/api/admin/session')
+const { $adminFetch } = useNuxtApp()
+const { data: session } = await useFetch<{ email: string }>('/api/admin/session', {
+  $fetch: $adminFetch,
+})
 
 async function signOut() {
   await client.auth.signOut()

@@ -19,5 +19,9 @@ definePageMeta({
 })
 
 const initialValue = emptyAdminArticlePayload()
-const { data: products } = await useFetch<Product[]>('/api/admin/products', { default: () => [] })
+const { $adminFetch } = useNuxtApp()
+const { data: products } = await useFetch<Product[]>('/api/admin/products', {
+  default: () => [],
+  $fetch: $adminFetch,
+})
 </script>

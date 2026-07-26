@@ -68,7 +68,11 @@ definePageMeta({
   layout: 'admin',
 })
 
-const { data: articles, refresh } = await useFetch<Article[]>('/api/admin/articles', { default: () => [] })
+const { $adminFetch } = useNuxtApp()
+const { data: articles, refresh } = await useFetch<Article[]>('/api/admin/articles', {
+  default: () => [],
+  $fetch: $adminFetch,
+})
 const textFilter = ref('')
 const statusFilter = ref<AdminStatusFilter>('all')
 const articleToDelete = ref<Article | null>(null)
@@ -83,8 +87,8 @@ function formatDate(value: string) {
 }
 
 async function toggleArticle(article: Article) {
-  const detail = await $fetch<AdminArticle>(`/api/admin/articles/${article.id}`)
-  await $fetch(`/api/admin/articles/${article.id}`, {
+  const detail = await $adminFetch<AdminArticle>(`/api/admin/articles/${article.id}`)
+  await $adminFetch(`/api/admin/articles/${article.id}`, {
     method: 'PUT',
     body: {
       ...articleToAdminPayload(detail),
@@ -99,7 +103,7 @@ async function deleteArticle() {
     return
   }
 
-  await $fetch(`/api/admin/articles/${articleToDelete.value.id}`, { method: 'DELETE' })
+  await $adminFetch(`/api/admin/articles/${articleToDelete.value.id}`, { method: 'DELETE' })
   articleToDelete.value = null
   await refresh()
 }

@@ -91,6 +91,7 @@ const props = defineProps<{
   productId?: string
 }>()
 
+const { $adminFetch } = useNuxtApp()
 const state = reactive<AdminProductPayload>(structuredClone(props.initialValue))
 const savedState = ref<AdminProductPayload>(structuredClone(props.initialValue))
 const slugTouched = ref(Boolean(props.initialValue.slug))
@@ -152,7 +153,7 @@ async function save(published: boolean) {
 
   submitting.value = true
   try {
-    const product = await $fetch<Product>(
+    const product = await $adminFetch<Product>(
       props.productId ? `/api/admin/products/${props.productId}` : '/api/admin/products',
       {
         method: props.productId ? 'PUT' : 'POST',

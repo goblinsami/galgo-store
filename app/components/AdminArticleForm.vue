@@ -81,6 +81,7 @@ const props = defineProps<{
   articleId?: string
 }>()
 
+const { $adminFetch } = useNuxtApp()
 const state = reactive<AdminArticlePayload>(structuredClone(props.initialValue))
 const savedState = ref<AdminArticlePayload>(structuredClone(props.initialValue))
 const slugTouched = ref(Boolean(props.initialValue.slug))
@@ -151,7 +152,7 @@ async function save(published: boolean) {
 
   submitting.value = true
   try {
-    const article = await $fetch<AdminArticle>(
+    const article = await $adminFetch<AdminArticle>(
       props.articleId ? `/api/admin/articles/${props.articleId}` : '/api/admin/articles',
       {
         method: props.articleId ? 'PUT' : 'POST',
