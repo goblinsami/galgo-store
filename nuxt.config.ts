@@ -8,6 +8,7 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     supabaseServiceRoleKey: process.env.SUPABASE_SERVICE_ROLE_KEY || '',
+    adminEmail: process.env.NUXT_ADMIN_EMAIL || '',
     public: {
       supabaseUrl: process.env.NUXT_PUBLIC_SUPABASE_URL || '',
       supabaseAnonKey: process.env.NUXT_PUBLIC_SUPABASE_ANON_KEY || '',
@@ -19,10 +20,12 @@ export default defineNuxtConfig({
     url: process.env.NUXT_PUBLIC_SUPABASE_URL || 'https://example.supabase.co',
     key: process.env.NUXT_PUBLIC_SUPABASE_ANON_KEY || 'development-anon-key',
     redirect: false,
+    useSsrCookies: false,
   },
   nitro: {
     routeRules: {
       '/api/**': { cors: false },
+      '/admin/**': { ssr: false },
     },
   },
 })

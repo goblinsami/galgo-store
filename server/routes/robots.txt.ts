@@ -7,6 +7,7 @@ export default defineEventHandler((event) => {
   return [
     'User-agent: *',
     'Allow: /',
+    'Disallow: /admin/',
     `Sitemap: ${createCanonicalUrl(String(config.public.siteUrl), '/sitemap.xml')}`,
   ].join('\n')
 })

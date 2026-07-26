@@ -12,6 +12,25 @@ Si faltan variables publicas de Supabase, el repositorio devuelve datos vacios y
 - `shared/utils/mappers.ts`: transformacion de filas Supabase.
 - `app/composables/useContentRepository.ts`: consultas reutilizables de productos, articulos y relaciones.
 - `server/utils/supabase.ts`: cliente Supabase anonimo para endpoints Nitro.
+- `server/utils/admin.ts`: `requireAdmin(event)`, que valida sesion Supabase y email exacto contra `NUXT_ADMIN_EMAIL`.
+- `shared/utils/admin-content.ts`: validacion de payloads, filtros y conversiones del panel.
+
+## Administracion
+
+El panel vive bajo `/admin/**`, tiene `noindex, nofollow` y queda fuera del sitemap. El middleware global redirige usuarios sin sesion a `/admin/login`; el servidor vuelve a comprobar autorizacion en cada endpoint administrativo.
+
+El administrador se crea manualmente en Supabase Auth. La aplicacion no implementa registro, roles, tabla `admin_users` ni gestion de usuarios. Solo se permite el email configurado en `NUXT_ADMIN_EMAIL`, que permanece en `runtimeConfig` privado.
+
+Las paginas admin nunca escriben directamente con permisos elevados desde el navegador. Para crear, editar o eliminar productos y guias llaman a endpoints internos:
+
+- `/api/admin/products`
+- `/api/admin/products/[id]`
+- `/api/admin/articles`
+- `/api/admin/articles/[id]`
+
+Cada endpoint llama primero a `requireAdmin(event)`. Solo despues usa `SUPABASE_SERVICE_ROLE_KEY` en servidor para saltar RLS y realizar la operacion. Los errores devueltos son genericos y no incluyen sesiones ni claves.
+
+Los previews protegidos (`/admin/preview/productos/[id]` y `/admin/preview/guias/[id]`) cargan registros por ID desde endpoints admin, por lo que pueden mostrar borradores sin exponerlos en las rutas publicas.
 
 ## Flujo del clic afiliado
 
@@ -30,4 +49,4 @@ Los listados y detalles usan `useAsyncData` para que el contenido principal no d
 
 ## Futuro agente de contenido
 
-Un agente futuro podria conectarse a una capa de administracion o funcion controlada para sugerir productos. Debe escribir borradores, no publicar automaticamente, y validar reglas de contenido antes de insertar datos.
+Un agente futuro podria conectarse a una funcion controlada para sugerir productos o guias. Debe escribir borradores con `published = false`, no publicar automaticamente, y validar reglas de contenido antes de insertar datos.
