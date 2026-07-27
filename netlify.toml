@@ -4,9 +4,4 @@
 
 [build.environment]
   NITRO_PRESET = "netlify"
-  NODE_VERSION = "22"
-
-[[redirects]]
-  from = "/*"
-  to = "/.netlify/functions/server"
-  status = 200
+  NODE_VERSION = "20"
