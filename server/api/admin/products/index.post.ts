@@ -2,13 +2,14 @@ import { ZodError } from 'zod'
 import { parseAdminProductPayload } from '~~/shared/utils/admin-content'
 import { mapProduct } from '~~/shared/utils/mappers'
 import { requireAdmin } from '../../../utils/admin'
+import { readEventJsonBody } from '../../../utils/request-body'
 
 export default defineEventHandler(async (event) => {
   const { supabase } = await requireAdmin(event)
 
   let payload
   try {
-    payload = parseAdminProductPayload(await readBody<unknown>(event))
+    payload = parseAdminProductPayload(await readEventJsonBody(event))
   } catch (error) {
     throw createError({
       statusCode: 400,

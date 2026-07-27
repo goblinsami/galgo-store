@@ -1,0 +1,353 @@
+{
+  "runId": "amazon-20260726215558",
+  "createdAt": "2026-07-26T21:55:58.792Z",
+  "source": "amazon",
+  "marketplace": "amazon.es",
+  "mode": "fixture",
+  "queries": [
+    {
+      "query": "arnes antiescape galgo",
+      "category": "arneses"
+    }
+  ],
+  "candidates": [
+    {
+      "source": "amazon",
+      "sourceApi": "amazon-creators-api",
+      "marketplace": "amazon.es",
+      "externalId": "B0GALGO001",
+      "asin": "B0GALGO001",
+      "parentAsin": "B0GALGOPAR",
+      "title": "Arnes antiescape para galgo de tres puntos ajustable",
+      "brand": "Marca Fixture",
+      "sourceUrl": "https://www.amazon.es/dp/B0GALGO001?tag=&linkCode=ogi&language=es_ES&th=1&psc=1",
+      "affiliateUrl": "https://www.amazon.es/dp/B0GALGO001?tag=&linkCode=ogi&language=es_ES&th=1&psc=1",
+      "imageUrl": "https://m.media-amazon.com/images/I/fixture-galgo-harness._SL500_.jpg",
+      "images": [
+        {
+          "url": "https://m.media-amazon.com/images/I/fixture-galgo-harness._SL500_.jpg",
+          "source": "amazon-creators-api",
+          "retrievedAt": "2026-07-26T21:55:58.778Z"
+        },
+        {
+          "url": "https://m.media-amazon.com/images/I/fixture-galgo-harness-side._SL500_.jpg",
+          "source": "amazon-creators-api",
+          "retrievedAt": "2026-07-26T21:55:58.778Z"
+        }
+      ],
+      "price": {
+        "amount": 29.99,
+        "currency": "EUR",
+        "retrievedAt": "2026-07-26T21:55:58.778Z"
+      },
+      "availability": "Disponible",
+      "features": [
+        "Diseno para galgos, whippets y perros de cuerpo delgado",
+        "Ajuste en cuello, pecho y cintura con medidas en cm",
+        "Sistema antiescape de tres puntos",
+        "Material nylon acolchado para paseos diarios"
+      ],
+      "variants": [],
+      "customerRating": 4.4,
+      "reviewCount": 128,
+      "amazonCategory": "Productos para mascotas",
+      "retrievedAt": "2026-07-26T21:55:58.778Z",
+      "rawFacts": [
+        "Arnes antiescape para galgo de tres puntos ajustable",
+        "Marca Fixture",
+        "Productos para mascotas",
+        "Diseno para galgos, whippets y perros de cuerpo delgado",
+        "Ajuste en cuello, pecho y cintura con medidas en cm",
+        "Sistema antiescape de tres puntos",
+        "Material nylon acolchado para paseos diarios"
+      ],
+      "evidence": [
+        {
+          "field": "title",
+          "value": "Arnes antiescape para galgo de tres puntos ajustable",
+          "source": "amazon-creators-api"
+        },
+        {
+          "field": "brand",
+          "value": "Marca Fixture",
+          "source": "amazon-creators-api"
+        },
+        {
+          "field": "amazonCategory",
+          "value": "Productos para mascotas",
+          "source": "amazon-creators-api"
+        },
+        {
+          "field": "feature.1",
+          "value": "Diseno para galgos, whippets y perros de cuerpo delgado",
+          "source": "amazon-creators-api"
+        },
+        {
+          "field": "feature.2",
+          "value": "Ajuste en cuello, pecho y cintura con medidas en cm",
+          "source": "amazon-creators-api"
+        },
+        {
+          "field": "feature.3",
+          "value": "Sistema antiescape de tres puntos",
+          "source": "amazon-creators-api"
+        },
+        {
+          "field": "feature.4",
+          "value": "Material nylon acolchado para paseos diarios",
+          "source": "amazon-creators-api"
+        }
+      ],
+      "id": "amazon-b0galgo001",
+      "query": "arnes antiescape galgo",
+      "category": "arneses",
+      "fixture": true,
+      "totalScore": 96.7,
+      "status": "candidate",
+      "suitabilityScore": 100,
+      "suitabilityReasons": [
+        "La ficha menciona galgos, greyhounds, whippets, sighthounds o lebreles.",
+        "Incluye pistas de tallaje o medidas que permiten revision manual.",
+        "Menciona sistema antiescape, tres puntos o martingale.",
+        "Describe materiales o proteccion frente al clima.",
+        "Aporta indicios de patron para cuerpos delgados o largos."
+      ],
+      "suitabilityWarnings": [],
+      "suitabilityEvidence": [
+        {
+          "field": "sighthound_term",
+          "value": "Arnes antiescape para galgo de tres puntos ajustable",
+          "source": "amazon-creators-api"
+        },
+        {
+          "field": "sighthound_term",
+          "value": "Diseno para galgos, whippets y perros de cuerpo delgado",
+          "source": "amazon-creators-api"
+        },
+        {
+          "field": "measure_term",
+          "value": "Arnes antiescape para galgo de tres puntos ajustable",
+          "source": "amazon-creators-api"
+        },
+        {
+          "field": "measure_term",
+          "value": "Ajuste en cuello, pecho y cintura con medidas en cm",
+          "source": "amazon-creators-api"
+        },
+        {
+          "field": "escape_term",
+          "value": "Arnes antiescape para galgo de tres puntos ajustable",
+          "source": "amazon-creators-api"
+        },
+        {
+          "field": "escape_term",
+          "value": "Sistema antiescape de tres puntos",
+          "source": "amazon-creators-api"
+        },
+        {
+          "field": "material_term",
+          "value": "Material nylon acolchado para paseos diarios",
+          "source": "amazon-creators-api"
+        },
+        {
+          "field": "slender_body_term",
+          "value": "Diseno para galgos, whippets y perros de cuerpo delgado",
+          "source": "amazon-creators-api"
+        }
+      ],
+      "suitabilityStatus": "promising"
+    },
+    {
+      "source": "amazon",
+      "sourceApi": "amazon-creators-api",
+      "marketplace": "amazon.es",
+      "externalId": "B0GALGO002",
+      "asin": "B0GALGO002",
+      "parentAsin": "B0GALGO002",
+      "title": "Abrigo impermeable para greyhound y whippet",
+      "brand": "Sighthound Fixture",
+      "sourceUrl": "https://www.amazon.es/dp/B0GALGO002?tag=&linkCode=ogi&language=es_ES",
+      "affiliateUrl": "https://www.amazon.es/dp/B0GALGO002?tag=&linkCode=ogi&language=es_ES",
+      "imageUrl": "https://m.media-amazon.com/images/I/fixture-greyhound-coat._SL500_.jpg",
+      "images": [
+        {
+          "url": "https://m.media-amazon.com/images/I/fixture-greyhound-coat._SL500_.jpg",
+          "source": "amazon-creators-api",
+          "retrievedAt": "2026-07-26T21:55:58.778Z"
+        }
+      ],
+      "price": {
+        "amount": 34.5,
+        "currency": "EUR",
+        "retrievedAt": "2026-07-26T21:55:58.778Z"
+      },
+      "availability": "Disponible",
+      "features": [
+        "Patron largo para sighthound",
+        "Impermeable con forro polar",
+        "Tabla de tallas por largo de lomo y pecho"
+      ],
+      "variants": [],
+      "customerRating": 4.1,
+      "reviewCount": 42,
+      "amazonCategory": "Ropa para perros",
+      "retrievedAt": "2026-07-26T21:55:58.778Z",
+      "rawFacts": [
+        "Abrigo impermeable para greyhound y whippet",
+        "Sighthound Fixture",
+        "Ropa para perros",
+        "Patron largo para sighthound",
+        "Impermeable con forro polar",
+        "Tabla de tallas por largo de lomo y pecho"
+      ],
+      "evidence": [
+        {
+          "field": "title",
+          "value": "Abrigo impermeable para greyhound y whippet",
+          "source": "amazon-creators-api"
+        },
+        {
+          "field": "brand",
+          "value": "Sighthound Fixture",
+          "source": "amazon-creators-api"
+        },
+        {
+          "field": "amazonCategory",
+          "value": "Ropa para perros",
+          "source": "amazon-creators-api"
+        },
+        {
+          "field": "feature.1",
+          "value": "Patron largo para sighthound",
+          "source": "amazon-creators-api"
+        },
+        {
+          "field": "feature.2",
+          "value": "Impermeable con forro polar",
+          "source": "amazon-creators-api"
+        },
+        {
+          "field": "feature.3",
+          "value": "Tabla de tallas por largo de lomo y pecho",
+          "source": "amazon-creators-api"
+        }
+      ],
+      "id": "amazon-b0galgo002",
+      "query": "arnes antiescape galgo",
+      "category": "arneses",
+      "fixture": true,
+      "totalScore": 68.3,
+      "status": "candidate",
+      "suitabilityScore": 82,
+      "suitabilityReasons": [
+        "La ficha menciona galgos, greyhounds, whippets, sighthounds o lebreles.",
+        "Incluye pistas de tallaje o medidas que permiten revision manual.",
+        "Describe materiales o proteccion frente al clima.",
+        "Aporta indicios de patron para cuerpos delgados o largos."
+      ],
+      "suitabilityWarnings": [],
+      "suitabilityEvidence": [
+        {
+          "field": "sighthound_term",
+          "value": "Abrigo impermeable para greyhound y whippet",
+          "source": "amazon-creators-api"
+        },
+        {
+          "field": "sighthound_term",
+          "value": "Sighthound Fixture",
+          "source": "amazon-creators-api"
+        },
+        {
+          "field": "sighthound_term",
+          "value": "Patron largo para sighthound",
+          "source": "amazon-creators-api"
+        },
+        {
+          "field": "measure_term",
+          "value": "Tabla de tallas por largo de lomo y pecho",
+          "source": "amazon-creators-api"
+        },
+        {
+          "field": "material_term",
+          "value": "Abrigo impermeable para greyhound y whippet",
+          "source": "amazon-creators-api"
+        },
+        {
+          "field": "material_term",
+          "value": "Impermeable con forro polar",
+          "source": "amazon-creators-api"
+        },
+        {
+          "field": "slender_body_term",
+          "value": "Patron largo para sighthound",
+          "source": "amazon-creators-api"
+        },
+        {
+          "field": "slender_body_term",
+          "value": "Tabla de tallas por largo de lomo y pecho",
+          "source": "amazon-creators-api"
+        }
+      ],
+      "suitabilityStatus": "promising"
+    },
+    {
+      "source": "amazon",
+      "sourceApi": "amazon-creators-api",
+      "marketplace": "amazon.es",
+      "externalId": "B0GALGO003",
+      "asin": "B0GALGO003",
+      "parentAsin": null,
+      "title": "Cama grande para perro",
+      "brand": null,
+      "sourceUrl": "https://www.amazon.es/dp/B0GALGO003?tag=&linkCode=ogi&language=es_ES",
+      "affiliateUrl": "https://www.amazon.es/dp/B0GALGO003?tag=&linkCode=ogi&language=es_ES",
+      "imageUrl": null,
+      "images": [],
+      "price": {
+        "amount": null,
+        "currency": null,
+        "retrievedAt": "2026-07-26T21:55:58.778Z"
+      },
+      "availability": "Sin precio publicado",
+      "features": [
+        "Superficie amplia para perros medianos y grandes"
+      ],
+      "variants": [],
+      "customerRating": null,
+      "reviewCount": null,
+      "amazonCategory": null,
+      "retrievedAt": "2026-07-26T21:55:58.778Z",
+      "rawFacts": [
+        "Cama grande para perro",
+        "Superficie amplia para perros medianos y grandes"
+      ],
+      "evidence": [
+        {
+          "field": "title",
+          "value": "Cama grande para perro",
+          "source": "amazon-creators-api"
+        },
+        {
+          "field": "feature.1",
+          "value": "Superficie amplia para perros medianos y grandes",
+          "source": "amazon-creators-api"
+        }
+      ],
+      "id": "amazon-b0galgo003",
+      "query": "arnes antiescape galgo",
+      "category": "arneses",
+      "fixture": true,
+      "totalScore": 10.1,
+      "status": "candidate",
+      "suitabilityScore": 0,
+      "suitabilityReasons": [],
+      "suitabilityWarnings": [
+        "No se han encontrado medidas suficientes en la respuesta.",
+        "La adecuacion para galgos no puede afirmarse sin revision humana."
+      ],
+      "suitabilityEvidence": [],
+      "suitabilityStatus": "manual_review_required"
+    }
+  ],
+  "errors": []
+}

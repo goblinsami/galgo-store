@@ -3,6 +3,7 @@ import type { Database } from '~~/shared/types/database'
 import { parseAdminArticlePayload } from '~~/shared/utils/admin-content'
 import { mapArticle } from '~~/shared/utils/mappers'
 import { requireAdmin } from '../../../utils/admin'
+import { readEventJsonBody } from '../../../utils/request-body'
 
 type ArticleProductInsert = Database['public']['Tables']['article_products']['Insert']
 
@@ -16,7 +17,7 @@ export default defineEventHandler(async (event) => {
 
   let payload
   try {
-    payload = parseAdminArticlePayload(await readBody<unknown>(event))
+    payload = parseAdminArticlePayload(await readEventJsonBody(event))
   } catch (error) {
     throw createError({
       statusCode: 400,

@@ -1,0 +1,157 @@
+{
+  "searchResult": {
+    "items": [
+      {
+        "asin": "B0GALGO001",
+        "parentASIN": "B0GALGOPAR",
+        "detailPageURL": "https://www.amazon.es/dp/B0GALGO001?tag=&linkCode=ogi&language=es_ES&th=1&psc=1",
+        "images": {
+          "primary": {
+            "large": {
+              "url": "https://m.media-amazon.com/images/I/fixture-galgo-harness._SL500_.jpg",
+              "width": 500,
+              "height": 500
+            }
+          },
+          "variants": [
+            {
+              "large": {
+                "url": "https://m.media-amazon.com/images/I/fixture-galgo-harness-side._SL500_.jpg",
+                "width": 500,
+                "height": 500
+              }
+            }
+          ]
+        },
+        "itemInfo": {
+          "title": {
+            "displayValue": "Arnes antiescape para galgo de tres puntos ajustable"
+          },
+          "byLineInfo": {
+            "brand": {
+              "displayValue": "Marca Fixture"
+            }
+          },
+          "features": {
+            "displayValues": [
+              "Diseno para galgos, whippets y perros de cuerpo delgado",
+              "Ajuste en cuello, pecho y cintura con medidas en cm",
+              "Sistema antiescape de tres puntos",
+              "Material nylon acolchado para paseos diarios"
+            ]
+          },
+          "classifications": {
+            "productGroup": {
+              "displayValue": "Productos para mascotas"
+            }
+          }
+        },
+        "offersV2": {
+          "listings": [
+            {
+              "availability": {
+                "message": "Disponible"
+              },
+              "price": {
+                "money": {
+                  "amount": 29.99,
+                  "currency": "EUR"
+                },
+                "displayAmount": "29,99 EUR"
+              }
+            }
+          ]
+        },
+        "customerReviews": {
+          "count": 128,
+          "starRating": {
+            "value": 4.4
+          }
+        }
+      },
+      {
+        "asin": "B0GALGO002",
+        "parentASIN": "B0GALGO002",
+        "detailPageURL": "https://www.amazon.es/dp/B0GALGO002?tag=&linkCode=ogi&language=es_ES",
+        "images": {
+          "primary": {
+            "large": {
+              "url": "https://m.media-amazon.com/images/I/fixture-greyhound-coat._SL500_.jpg",
+              "width": 500,
+              "height": 500
+            }
+          }
+        },
+        "itemInfo": {
+          "title": {
+            "displayValue": "Abrigo impermeable para greyhound y whippet"
+          },
+          "byLineInfo": {
+            "brand": {
+              "displayValue": "Sighthound Fixture"
+            }
+          },
+          "features": {
+            "displayValues": [
+              "Patron largo para sighthound",
+              "Impermeable con forro polar",
+              "Tabla de tallas por largo de lomo y pecho"
+            ]
+          },
+          "classifications": {
+            "productGroup": {
+              "displayValue": "Ropa para perros"
+            }
+          }
+        },
+        "offersV2": {
+          "listings": [
+            {
+              "availability": {
+                "message": "Disponible"
+              },
+              "price": {
+                "money": {
+                  "amount": 34.5,
+                  "currency": "EUR"
+                }
+              }
+            }
+          ]
+        },
+        "customerReviews": {
+          "count": 42,
+          "starRating": {
+            "value": 4.1
+          }
+        }
+      },
+      {
+        "asin": "B0GALGO003",
+        "detailPageURL": "https://www.amazon.es/dp/B0GALGO003?tag=&linkCode=ogi&language=es_ES",
+        "images": {
+          "primary": {}
+        },
+        "itemInfo": {
+          "title": {
+            "displayValue": "Cama grande para perro"
+          },
+          "features": {
+            "displayValues": [
+              "Superficie amplia para perros medianos y grandes"
+            ]
+          }
+        },
+        "offersV2": {
+          "listings": [
+            {
+              "availability": {
+                "message": "Sin precio publicado"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

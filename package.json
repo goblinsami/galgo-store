@@ -8,6 +8,7 @@
     "preview": "nuxt preview",
     "lint": "eslint .",
     "typecheck": "nuxt typecheck",
+    "research:amazon": "jiti scripts/product-research-agent.ts",
     "test": "vitest run",
     "test:watch": "vitest"
   },

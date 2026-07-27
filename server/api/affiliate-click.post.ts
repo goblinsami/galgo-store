@@ -1,5 +1,7 @@
 import { parseAffiliateClickPayload } from '~~/shared/utils/affiliate-click'
 import { isAllowedAmazonSpainUrl } from '~~/shared/utils/affiliate'
+import { readEventJsonBody } from '../utils/request-body'
+import { getEventHeader } from '../utils/request-header'
 import { createServerSupabaseClient } from '../utils/supabase'
 
 export default defineEventHandler(async (event) => {
@@ -12,7 +14,7 @@ export default defineEventHandler(async (event) => {
     })
   }
 
-  const body = await readBody<unknown>(event)
+  const body = await readEventJsonBody(event)
   const payload = parseAffiliateClickPayload(body)
 
   const { data: product, error } = await supabase
@@ -36,7 +38,7 @@ export default defineEventHandler(async (event) => {
     })
   }
 
-  const referrer = getHeader(event, 'referer') ?? null
+  const referrer = getEventHeader(event, 'referer') ?? null
   const insertResult = await supabase
     .from('affiliate_clicks')
     .insert({

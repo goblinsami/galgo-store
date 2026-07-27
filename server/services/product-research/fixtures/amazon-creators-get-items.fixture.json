@@ -1,0 +1,44 @@
+{
+  "itemResults": {
+    "items": [
+      {
+        "asin": "B0GALGO001",
+        "parentASIN": "B0GALGOPAR",
+        "detailPageURL": "https://www.amazon.es/dp/B0GALGO001?tag=&linkCode=ogi&language=es_ES&th=1&psc=1",
+        "images": {
+          "primary": {
+            "large": {
+              "url": "https://m.media-amazon.com/images/I/fixture-galgo-harness._SL500_.jpg"
+            }
+          }
+        },
+        "itemInfo": {
+          "title": {
+            "displayValue": "Arnes antiescape para galgo de tres puntos ajustable"
+          },
+          "features": {
+            "displayValues": [
+              "Diseno para galgos, whippets y perros de cuerpo delgado",
+              "Ajuste en cuello, pecho y cintura con medidas en cm"
+            ]
+          }
+        },
+        "offersV2": {
+          "listings": [
+            {
+              "availability": {
+                "message": "Disponible"
+              },
+              "price": {
+                "money": {
+                  "amount": 29.99,
+                  "currency": "EUR"
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
